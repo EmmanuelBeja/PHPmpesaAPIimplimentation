@@ -1,0 +1,5 @@
+{
+    "require": {
+        "smodav/mpesa": "^1.1"
+    }
+}
