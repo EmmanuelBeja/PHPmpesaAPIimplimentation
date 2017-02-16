@@ -42,8 +42,7 @@ return [
     |
     */
 
-  //  'callback_url' => "http://payments.smodavproductions.com/checkout.php",
-    'callback_url' => "http://localhost:8080/mpesatest/",
+    'callback_url' => "http://payments.smodavproductions.com/checkout.php",
 
     /*
     |--------------------------------------------------------------------------
