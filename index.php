@@ -15,19 +15,13 @@ if(isset($_POST['subscribe']))
      $amount = ($_POST["amount"]);
       $mpesa = new Mpesa;
 
-  //        $repsonse = $mpesa->setPayBill(898998, 'passkey')
-    //          ->request(10)
-      //        ->from(254712991415)
-        //      ->usingReferenceId(115445)
-          //    ->transact();
-
           $repsonse = $mpesa->setPayBill($paybill, $passkey)
                       ->request($amount)
                       ->from($phonenumber)
                       ->usingReferenceId($refid)
                       ->transact();
 
-      echo 'Success!Please verify the transaction on your phone to complete the transaction!';                
+      echo 'Success!Please verify the transaction on your phone to complete the transaction!';
     } catch(Exception $error){
       //your custom message
       echo 'Caught exception: ',  $error->getMessage(), "\n";

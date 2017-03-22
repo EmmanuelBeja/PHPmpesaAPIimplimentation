@@ -7,6 +7,6 @@ In this case change the line bellow in vendor/smodav/mpesa/config/mpesa to a url
 'callback_url' => "http://payments.smodavproductions.com/checkout.php",
 
 This implimentation requires a FQDN to be fully functional.
-This implimentation basically extends Smodav/Mpesa implimentation making it easier to comprehend.
+This implimentation basically adds up on Smodav/Mpesa implimentation making it easier to comprehend.
 
 Happy coding!!
